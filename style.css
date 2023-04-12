@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), #3ea29d),
+    url(images/how-smart-home-assistants-work.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.logo {
+  width: 150px;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 180px;
+}
+.banner-text h1 {
+  font-size: 80px;
+  font-family: "Kaushan Script", cursive;
+}
+
+.banner-text p {
+  font-size: 20px;
+}
