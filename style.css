@@ -11,7 +11,7 @@
   height: 100vh;
 }
 .logo {
-  width: 200px;
+  width: 150px;
   position: absolute;
   top: 1%;
   left: 1%;
@@ -189,4 +189,32 @@ nav ul li a {
   .features-img img {
     width: 100%;
   }
+}
+
+/*--vielfalt---*/
+
+#vielfalt {
+  width: 100%;
+  padding: 70px 0;
+  background: #efefef;
+}
+
+.vielfalt-box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.single-vielfalt {
+  flex-basis: 40%;
+  text-align: center;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.single-vielfalt img {
+  width: 25%;
+  border-radius: 7px;
 }
