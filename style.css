@@ -208,13 +208,28 @@ nav ul li a {
 }
 
 .single-vielfalt {
-  flex-basis: 40%;
+  flex-basis: 48%;
   text-align: center;
   border-radius: 7px;
   margin-bottom: 20px;
   color: #fff;
+  position: relative;
 }
 .single-vielfalt img {
-  width: 25%;
+  width: 90%;
   border-radius: 7px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), #3ea29d);
+  opacity: 0;
+  transition: 1s;
+}
+.single-vielfalt:hover .overlay {
+  opacity: 1;
 }
