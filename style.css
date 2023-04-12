@@ -11,7 +11,7 @@
   height: 100vh;
 }
 .logo {
-  width: 150px;
+  width: 200px;
   position: absolute;
   top: 1%;
   left: 1%;
@@ -110,7 +110,7 @@ nav ul li a {
   }
 }
 
-/*--feature--*/
+/*--Definition--*/
 
 #feature {
   width: 100%;
@@ -119,7 +119,7 @@ nav ul li a {
 
 .title-text {
   text-align: center;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
 }
 .title-text p {
   margin: auto;
@@ -164,4 +164,29 @@ nav ul li a {
   margin: auto;
 }
 .features-img img {
+  width: 70%;
+  border-radius: 10px;
+}
+.features-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.feature-text p {
+  padding: 0 20px;
+  text-align: justify;
+}
+@media screen and (max-width: 770px) {
+  .title-text h1 {
+    font-size: 30px;
+  }
+  .features {
+    flex-basis: 100%;
+  }
+  .features-img {
+    flex-basis: 100%;
+  }
+  .features-img img {
+    width: 100%;
+  }
 }
