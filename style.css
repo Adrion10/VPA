@@ -233,3 +233,28 @@ nav ul li a {
 .single-vielfalt:hover .overlay {
   opacity: 1;
 }
+
+.vielfalt-desc {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: 1s;
+}
+
+hr {
+  background: #fff;
+  height: 2px;
+  border: 0;
+  margin: 15px auto;
+  width: 60%;
+}
+.vielfalt-desc p {
+  font-size: 14px;
+}
+.single-vielfalt:hover .vielfalt-desc {
+  bottom: 40%;
+  opacity: 1;
+}
