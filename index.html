@@ -16,6 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap"
       rel="stylesheet"
     />
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    
   </head>
 
   <body>
@@ -33,10 +36,10 @@
     <div id="sideNav">
       <nav>
         <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">DEFINITION</a></li>
-          <li><a href="#">VIELFALT</a></li>
-          <li><a href="#">FÄHIGKEITEN</a></li>
+          <li><a href="#banner">HOME</a></li>
+          <li><a href="#feature">DEFINITION</a></li>
+          <li><a href="#vielfalt">VIELFALT</a></li>
+          <li><a href="#fähigkeiten">FÄHIGKEITEN</a></li>
           <li><a href="#">MEET US</a></li>
         </ul>
       </nav>
@@ -194,6 +197,9 @@
       </div>
     </section>
 
+    <!--footer-->
+
+
     <script>
       var menuBtn = document.getElementById("menuBtn");
       var sisdeNav = document.getElementById("sideNav");
@@ -208,6 +214,13 @@
           sideNav.style.right = "-250px";
         }
       };
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
     </script>
+
+
   </body>
 </html>

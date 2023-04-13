@@ -348,3 +348,17 @@ hr {
 .fähigkeiten-text ul li {
   text-align: justify;
 }
+@media screen and (max-width: 770px) {
+  .title-text h1 {
+    font-size: 30px;
+  }
+  .fähigkeiten {
+    flex-basis: 100%;
+  }
+  .fähigkeiten-img {
+    flex-basis: 100%;
+  }
+  .fähigkeiten-img img {
+    width: 100%;
+  }
+}
