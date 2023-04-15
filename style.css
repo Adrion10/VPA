@@ -367,3 +367,36 @@ hr {
 /*--Ende Fähigkeiten--*/
 
 /*--Risiken--*/
+#risiken {
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background: #efefef;
+}
+
+.alle-risiken {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.risiken-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.risiken-text {
+  padding: 30px;
+  flex-basis: 50%;
+  background-color: #3ea29d;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
