@@ -369,9 +369,8 @@ hr {
 /*--Risiken--*/
 #risiken {
   flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+  width: 100%;
+  padding: 70px 0;
   background: #efefef;
 }
 
@@ -394,9 +393,14 @@ hr {
 .risiken-text {
   padding: 30px;
   flex-basis: 50%;
-  background-color: #3ea29d;
+  background-image: linear-gradient(60deg, #3ea29d 0%, #fff 100%);
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
+}
+
+.risiken-text h1 {
+  font-size: 4rem;
+  font-weight: 500;
 }
