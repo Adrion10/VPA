@@ -112,7 +112,7 @@ nav ul li a {
 
 /*--Definition--*/
 
-#feature {
+#definition {
   width: 100%;
   padding: 70px 0;
 }
@@ -148,7 +148,7 @@ nav ul li a {
   font-size: 50px;
 }
 
-.feature-box {
+.definition-box {
   width: 80%;
   margin: auto;
   display: flex;
@@ -156,23 +156,23 @@ nav ul li a {
   align-items: center;
   text-align: center;
 }
-.features {
+.definitione {
   flex-basis: 50%;
 }
-.features-img {
+.definition-img {
   flex-basis: 50%;
   margin: auto;
 }
-.features-img img {
+.definition-img img {
   width: 70%;
   border-radius: 10px;
 }
-.features-desc {
+.definition-desc {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
-.feature-text p {
+.definition-text p {
   padding: 0 20px;
   text-align: justify;
 }
@@ -180,13 +180,13 @@ nav ul li a {
   .title-text h1 {
     font-size: 30px;
   }
-  .features {
+  .definitione {
     flex-basis: 100%;
   }
-  .features-img {
+  .definition-img {
     flex-basis: 100%;
   }
-  .features-img img {
+  .definition-img img {
     width: 100%;
   }
 }
@@ -366,53 +366,345 @@ hr {
 }
 /*--Ende Fähigkeiten--*/
 
-/*--Risiken--*/
-#risiken {
+/* ++++++ Risiken section start +++++*/
+#risikens .risiken {
   flex-direction: column;
-  width: 100%;
-  padding: 70px 0;
-  background: #efefef;
-  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 0;
 }
-#risiken .risiken-item {
-  flex-direction: row;
+#risikens .risiken-header > h2 {
+  margin-bottom: 5rem;
 }
-#risiken .risiken-item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.alle-risiken {
+#risikens .alle-risiken {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-
-.risiken-text {
-  padding: 30px;
-  flex-basis: 50%;
-  background-image: linear-gradient(60deg, #3ea29d 0%, #fff 100%);
+#risikens .risiken-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.risiken-text h1 {
-  font-size: 4rem;
-  font-weight: 500;
-}
-
-.risiken-text h2 {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-top: 10px;
-}
-
-.risiken-item {
   width: 80%;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.section-title {
+  text-align: center;
+  font-size: 4rem;
+  color: #343433;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 2px #28498f;
+  margin: 1rem;
+}
+#risikens .risiken-info {
+  padding: 3rem;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background: linear-gradient(rgb(23, 21, 100), #3ea29d);
+  color: white;
+}
+#risikens .risiken-info > h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  text-shadow: 1px 3px 2px #565640;
+  margin: 1rem;
+  text-align: center;
+}
+#risikes .risiken-info > p {
+  color: white;
+  font-size: 2rem;
+}
+#risikens .risiken-img {
+  flex-basis: 50%;
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+  object-fit: cover;
+
+  /* position: relative; */
+}
+#risikens .risiken-img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #dee2d8 0%, #1b3d64 100%);
+  opacity: 0.5;
+  object-fit: cover;
+}
+#risikens .risiken-img img {
+  transition: 0.3s ease transform;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#risikens .risiken-item:hover .risiken-img img {
+  transform: scale(1.2);
+}
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 786px) {
+  #risikens .risiken-item {
+    flex-direction: row;
+  }
+  #risikens .risiken-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #risikens .risiken-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  #risikens .all-risiken .risiken-info {
+    height: 100%;
+  }
+  #risikens .all-risiken .risiken-img {
+    height: 100%;
+  }
+}
+
+/*-->Ende Risiken--*/
+
+/*--Zusammenfassung--*/
+
+#zusammenfassung {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.title-text h1 {
+  font-size: 50px;
+}
+
+.zusammenfassung-box {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: auto;
+  align-items: center;
+  text-align: center;
 }
-/*-->Ende Risiken--*/
+.zusammenfassungen {
+  flex-basis: 50%;
+}
+
+.zusammenfassung-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.zusammenfassung-text p {
+  padding: 0 20px;
+  text-align: justify;
+}
+@media screen and (max-width: 770px) {
+  .title-text h1 {
+    font-size: 30px;
+  }
+  .zusammenfaassungen {
+    flex-basis: 100%;
+  }
+}
+/*  Ende Zusammenfassung  */
+
+/*  Footer  */
+.footer {
+  position: relative;
+  bottom: 0;
+}
+.footer-content {
+  background-color: #3ea29d;
+  box-shadow: 2px 2px 2px 0 rgba(231, 228, 9, 0.5);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 1.6rem sans-serif;
+  padding: 3rem;
+  /* margin-top:4rem; */
+}
+
+.footer-content .footer-left,
+.footer-content .footer-center,
+.footer-content .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-content .footer-left {
+  width: 40%;
+}
+
+.footer-content > h3 {
+  color: rgb(0, 51, 255);
+  font: normal 3rem "Cookie", cursive;
+  margin: 0;
+}
+
+.footer-content,
+h3 span {
+  color: #000000;
+}
+
+.footer-content .footer-links {
+  color: #fff;
+  margin: 1rem 0;
+  padding: 1rem 0;
+}
+
+.footer-content .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+.footer-content .footer-company-name {
+  color: #d0d336;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer-content .footer-center {
+  width: 35%;
+}
+
+.footer-content .footer-center i {
+  background-color: #3ea29d;
+  color: #d0d336;
+  font-size: 2.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4.2rem;
+  vertical-align: middle;
+}
+
+.footer-center i:hover {
+  color: rgb(250, 250, 250);
+  transform: scale(1.2);
+}
+
+.footer-content .footer-center p {
+  display: inline-block;
+  color: #fff;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer-content .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #00e213;
+}
+
+.footer-content .footer-center p a {
+  color: #aab419;
+  text-decoration: none;
+}
+
+.footer-content .footer-right {
+  width: 20%;
+}
+
+.footer-company-about p {
+  line-height: 2rem;
+  color: #3ba321;
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-content .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-content .footer-icons a {
+  display: inline-block;
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+  background-color: #3ea29d;
+  border-radius: 2px;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+.footer-icons .social-media > li {
+  display: inline-block;
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+}
+.social-media > li > a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+.social-media > li:nth-child(1) > a:hover {
+  color: blue;
+  transform: scale(1.5);
+}
+.social-media > li:nth-child(2) > a:hover {
+  color: skyblue;
+  transform: scale(1.5);
+}
+.social-media > li:nth-child(3) > a:hover {
+  color: red;
+  transform: scale(1.5);
+}
+.social-media > li:nth-child(4) > a:hover {
+  color: rgb(66, 66, 241);
+  transform: scale(1.5);
+}
+.social-media > li:nth-child(5) > a:hover {
+  color: rgb(143, 143, 155);
+  transform: scale(1.5);
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    font: bold 1.4rem sans-serif;
+  }
+  .footer-content .footer-left,
+  .footer-content .footer-center,
+  .footer-content .footer-right,
+  .footer-icons .social-media {
+    display: block;
+    width: 100%;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .footer-content .footer-center .social-media {
+    margin-left: 0;
+  }
+}
+/* Ende Footer */
