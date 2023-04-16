@@ -372,24 +372,21 @@ hr {
   width: 100%;
   padding: 70px 0;
   background: #efefef;
+  flex-direction: column;
 }
-
+#risiken .risiken-item {
+  flex-direction: row;
+}
+#risiken .risiken-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
 .alle-risiken {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.risiken-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
+
 .risiken-text {
   padding: 30px;
   flex-basis: 50%;
@@ -404,3 +401,18 @@ hr {
   font-size: 4rem;
   font-weight: 500;
 }
+
+.risiken-text h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.risiken-item {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+/*-->Ende Risiken--*/
